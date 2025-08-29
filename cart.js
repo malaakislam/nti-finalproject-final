@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const loggedIn = localStorage.getItem("loggedIn");
     if (!loggedIn || loggedIn !== "true") {
       alert("You must be signed in to view this page.");
-      window.location.href = "login.html"; 
+      window.location.href = "home.html"; 
     }
     const cartContainer = document.getElementById("cartContainer");
     const totalPriceElement = document.getElementById("totalPrice");
@@ -82,4 +82,5 @@ document.addEventListener("DOMContentLoaded", () => {
   
     renderCart();
   });
+
   
